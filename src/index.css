@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'BaksoTahu';
+  src: url('/fonts/BaksoTahu.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BaksoSapi';
+  src: url('/fonts/BaksoSapi.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ---- Base ---- */
+body {
+  background-color: #0D0B0A;
+  color: #EBE7E1;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Section sub-titles use BaksoSapi */
+.font-section {
+  font-family: 'BaksoSapi', system-ui, sans-serif;
+}
+
+::selection {
+  background-color: #ec4899;
+  color: #ffffff;
+}
+
+/* ---- Custom range slider ---- */
+input[type=range] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: linear-gradient(to right, rgba(236,72,153,0.5) 0%, rgba(236,72,153,0.5) var(--range-pct, 50%), #262320 var(--range-pct, 50%), #262320 100%);
+  border-radius: 9999px;
+  height: 6px;
+  outline: none;
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #ec4899;
+  border: 2px solid #ffffff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.5);
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+input[type=range]::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+  background: #f472b6;
+}
+input[type=range]::-moz-range-thumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #ec4899;
+  border: 2px solid #ffffff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.5);
+  cursor: pointer;
+}
+input[type=range]::-moz-range-progress {
+  background: rgba(236,72,153,0.5);
+  border-radius: 9999px;
+  height: 6px;
+}
+
+/* ---- Custom scrollbar ---- */
+.custom-scroll::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.custom-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: #332F2A;
+  border-radius: 4px;
+}
+
+/* ---- Checkerboard (cow themed) ---- */
+.checkboard-bg {
+  background-color: #1A1816;
+  background-image:
+    linear-gradient(45deg, #151311 25%, transparent 25%),
+    linear-gradient(-45deg, #151311 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #151311 75%),
+    linear-gradient(-45deg, transparent 75%, #151311 75%);
+  background-size: 16px 16px;
+  background-position: 0 0, 0 8px, 8px -8px, -8px 0px;
+}
+
+/* ---- Cow dashed border (for dropzone) ---- */
+.cow-dashed-border {
+  background-image:
+    repeating-linear-gradient(0deg, #3D352F, #3D352F 8px, transparent 8px, transparent 16px),
+    repeating-linear-gradient(90deg, #3D352F, #3D352F 8px, transparent 8px, transparent 16px),
+    repeating-linear-gradient(180deg, #3D352F, #3D352F 8px, transparent 8px, transparent 16px),
+    repeating-linear-gradient(270deg, #3D352F, #3D352F 8px, transparent 8px, transparent 16px);
+  background-size: 2px 100%, 100% 2px, 2px 100%, 100% 2px;
+  background-position: 0 0, 0 0, 100% 0, 0 100%;
+  background-repeat: no-repeat;
+}
