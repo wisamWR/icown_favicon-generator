@@ -11,6 +11,11 @@
 </p>
 
 <p align="center">
+  <a href="https://icown-favicon-generator.vercel.app/"><img src="https://img.shields.io/badge/%20Web-icown-ec4899?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo" /></a>
+  <a href="https://github.com/wisamWR/icown_favicon-generator"><img src="https://img.shields.io/badge/GitHub-Source-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/react-18.3-61dafb?logo=react&logoColor=white" alt="React" />
   <img src="https://img.shields.io/badge/typescript-5.6-3178c6?logo=typescript&logoColor=white" alt="TypeScript" />
   <img src="https://img.shields.io/badge/vite-6-646cff?logo=vite&logoColor=white" alt="Vite" />
@@ -25,6 +30,7 @@
 Most favicon generators require uploading your image to a server, waiting for processing, and downloading results. **icown** does everything client-side using the Canvas 2D API - your images never leave your browser.
 
 It generates every format you need in one click: ICO, PNG (all standard sizes), SVG with dark mode support, maskable icons for Android, and a complete web manifest - all packaged in a ZIP with framework-specific code snippets.
+https://icown-favicon-generator.vercel.app/
 
 ---
 
